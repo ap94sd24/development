@@ -24,7 +24,13 @@ exports.get = function (req,res) {
         phone = phone.replace('1', '');
 				phone = phone.slice(0, 3) + '-' + phone.slice(3, 6) + '-' + phone.slice(6);
 
-        res.render('business/accountsettings', {
+        var page; // page to load
+        if (emp.permissionLevel < 3)
+            page = 'business/accountsettings';
+        else
+            page = 'business/accountsettings_low';
+        
+        res.render(page, {
             title: 'Express',
             fname: emp.fname,
             lname: emp.lname,
@@ -35,9 +41,6 @@ exports.get = function (req,res) {
             emailNotify: emp.emailNotify,
             message: req.flash("permission")
         });
-
-        if (emp.permissionLevel > 2)
-            document.getElementById('secondary_navbar').style.display = "none";
     });
 };
 
