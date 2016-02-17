@@ -96,7 +96,7 @@ module.exports = function (passport) {
                                 smsNotify: true,
                                 emailNotify: true,
                                 admin: true,
-                                permissionLevel: 'my permission is 2!'
+                                permissionLevel: 2
                             },function(err, user){
                                 if (err) {
                                     throw err;

@@ -24,9 +24,6 @@ exports.get = function (req,res) {
         phone = phone.replace('1', '');
 				phone = phone.slice(0, 3) + '-' + phone.slice(3, 6) + '-' + phone.slice(6);
 
-        if (emp.permissionLevel > 2)
-            document.getElementById('secondary_navbar').style.display = "none";
-
         res.render('business/accountsettings', {
             title: 'Express',
             fname: emp.fname,
@@ -38,6 +35,9 @@ exports.get = function (req,res) {
             emailNotify: emp.emailNotify,
             message: req.flash("permission")
         });
+
+        if (emp.permissionLevel > 2)
+            document.getElementById('secondary_navbar').style.display = "none";
     });
 };
 
