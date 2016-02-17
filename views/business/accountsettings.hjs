@@ -28,7 +28,7 @@
         </ul>
 	    </div>
 	    <!--Secondary navbar for the Settings tab-->
-	    <div class="navbar-secondary navbar-tabs">
+	    <div class="navbar-secondary navbar-tabs" id="secondary_navbar">
 	        <ul>
 	            <li><a href="/registerDevice">Configurations</a></li>
 	            <li><a href="/manageforms">Manage Forms</a></li>
