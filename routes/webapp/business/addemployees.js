@@ -51,7 +51,7 @@ exports.get = function(req,res){
             res.render('business/addemployees',{title: 'Express',notsigned: notemployee, signed: employeee});
 
         });
-}
+};
 
 /**
  * Takes a req and res parameters and is inputted into function to get employee, notemployee, and business data.
@@ -60,8 +60,6 @@ exports.get = function(req,res){
  * @returns The appropriate data about the employee
  */
 exports.post = function(req,res) {
-    console.log(req.body);
-    console.log(req.body.csvEmployees);
     var parsed = baby.parse(req.body.csvEmployees);
     var rows = parsed.data;
     var database =  req.db;
@@ -104,7 +102,7 @@ exports.post = function(req,res) {
         });
     }
     res.redirect('/addemployees');
-}
+};
 
 
 function randomToken() {
