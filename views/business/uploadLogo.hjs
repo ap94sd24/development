@@ -43,7 +43,7 @@
 
             <li class="active"><a href="/uploadlogo">Upload Logo</a></li>
             <li>
-                <a href="/accountSettings">Settings</a>
+                <a href="/customizetheme">Customize Theme</a>
             </li>
             <li><a href="/accountSettings">Account Settings</a></li>
         </ul>
