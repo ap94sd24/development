@@ -29,7 +29,7 @@ exports.get = function (req,res) {
             page = 'business/accountsettings';
         else
             page = 'business/accountsettings_low';
-        
+
         res.render(page, {
             title: 'Express',
             fname: emp.fname,
