@@ -27,21 +27,6 @@
             <li><a href="/businesssetting">Company Name</a></li>
         </ul>
 	    </div>
-	    <!--Secondary navbar for the Settings tab-->
-	    <div class="navbar-secondary navbar-tabs" id="secondary_navbar">
-	        <ul>
-	            <li><a href="/registerDevice">Configurations</a></li>
-	            <li><a href="/manageforms">Manage Forms</a></li>
-
-	            <!-- <li><a href="/setdisclosure">Add Disclosure Agreement</a></li> -->
-
-	            <li><a href="/uploadlogo">Upload Logo</a></li>
-	            <li>
-	                <a href="/customizetheme">Customize Theme</a>
-	            </li>
-	            <li class="active"><a href="/accountSettings">Account Settings</a></li>
-	        </ul>
-	    </div>
 	</nav>
 
 	<div class="container container-margin-accountSettings">
