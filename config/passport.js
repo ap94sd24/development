@@ -78,7 +78,6 @@ module.exports = function (passport) {
                             lname: lname,
                             logo: '',
                             walkins: false,
-                            permissionLevel: 2
                         }, function (err, result) {
                             if (err) {
                                 throw err;
@@ -96,7 +95,7 @@ module.exports = function (passport) {
                                 smsNotify: true,
                                 emailNotify: true,
                                 admin: true,
-                                permissionLevel: 3
+                                permissionLevel: 2
                             },function(err, user){
                                 if (err) {
                                     throw err;
